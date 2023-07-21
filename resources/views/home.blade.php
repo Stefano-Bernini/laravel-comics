@@ -16,6 +16,7 @@
 
     <body>
         @include('partials.header')
+
         <main>
             <div class="background_black">
                 <div class="container">
@@ -57,6 +58,7 @@
                 </div>
             </div>
         </main>
+        
         @include('partials.footer')
     </body>
 </html>
