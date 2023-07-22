@@ -11,12 +11,28 @@
     background-color: rgb(2, 130, 249);
 }
 
-.header-li:hover {
-    border-bottom: rgb(2, 130, 249) 3px solid;
+.bottom_header {
 
-    a {
-        color: rgb(2, 130, 249);
+    ul li a {
+        display: inline-block;
+        border-bottom: 5px solid white;
+        position: relative;
+
+        &:hover {
+            border-bottom: 5px solid rgb(2, 130, 249);
+        }
+
+        &:hover a {
+            color: rgb(2, 130, 249);
+        }
     }
+}
+
+.search_style {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: rgb(2, 130, 249);
 }
 
 .jumbotron {
@@ -63,6 +79,10 @@ footer p a {
     color: rgb(26, 82, 212);
 }
 
+.bottom_footer {
+    background-color: rgb(48, 48, 48);
+}
+
 footer a {
     text-decoration: none;
     color: gray;
@@ -70,5 +90,14 @@ footer a {
 
 footer ul {
     list-style: none;
+    color: white;
+}
+
+footer h3 {
+    color: rgb(2, 130, 249);
+}
+
+.btn {
+    border-color: rgb(2, 130, 249);
     color: white;
 }

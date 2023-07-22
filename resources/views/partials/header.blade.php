@@ -32,7 +32,7 @@
                         <li><a href="{{ route('homepage') }}" class="list-group-item mx-3 fw-bolder">news</a></li>
                         <li><a href="{{ route('homepage') }}" class="list-group-item mx-3 fw-bolder">shop</a></li>
                         <li>
-                            <input type="search" placeholder="Search">
+                            <input class="search_style" type="search" placeholder="Search">
                         </li>
                     </ul>
                 </div>

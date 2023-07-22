@@ -45,5 +45,21 @@
             </div>
         </div>
     </div>
-     
+    <div class="bottom_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between py-4">
+                    <button type="button" class="btn btn-outline-primary rounded-0">SIGN-UP NOW!</button>
+                    <div class="d-flex align-items-center">
+                        <h3 class="me-4">FOLLOW US</h3>
+                        <a class="me-4" href="#"><img src="{{ Vite::asset('resources/img/footer-facebook.png') }}" alt="facebook"></a>
+                        <a class="me-4" href="#"><img src="{{ Vite::asset('resources/img/footer-twitter.png') }}" alt="twitter"></a>
+                        <a class="me-4" href="#"><img src="{{ Vite::asset('resources/img/footer-youtube.png') }}" alt="youtube"></a>
+                        <a class="me-4" href="#"><img src="{{ Vite::asset('resources/img/footer-pinterest.png') }}" alt="pinterest"></a>
+                        <a class="me-4" href="#"><img src="{{ Vite::asset('resources/img/footer-periscope.png') }}" alt="periscope"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
 </footer>
