@@ -24,9 +24,13 @@
                         @foreach($comics as $comic)
                             <div class="col-12 col-md-6 col-lg-2 mt-5">
                                 <div class="card border-1 my-1">
-                                    <img class="img-fluid card-img-top h_img" src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                                    <a href="#">
+                                        <img class="img-fluid card-img-top h_img" src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                                    </a>
                                 </div>
-                                <span>{{ $comic['title'] }}</span>
+                                <a class="text_dec_none" href="#">
+                                    <span>{{ $comic['series'] }}</span>
+                                </a>
                             </div> 
                         @endforeach
                     </div>
