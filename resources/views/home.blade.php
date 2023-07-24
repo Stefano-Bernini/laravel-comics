@@ -4,13 +4,13 @@
     <div class="background_black">
         <div class="container">
             <div class="row">
-                @foreach($comics as $comic)
+                @foreach($comics as $id => $comic)
                     <div class="col-12 col-md-6 col-lg-2 mt-5">
-                        <div class="card border-1 my-1">
-                            <a href="#">
-                                <img class="img-fluid card-img-top h_img" src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                            </a>
-                        </div>
+                        <a href="{{ route('products.show', $id) }}">
+                            <div class="card border-1 my-1">
+                                <img class="img-fluid card-img-top h_img" src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}"> 
+                            </div>
+                        </a>
                         <a class="text_dec_none" href="#">
                             <span>{{ $comic['series'] }}</span>
                         </a>

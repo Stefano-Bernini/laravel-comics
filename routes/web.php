@@ -20,9 +20,13 @@ Route::get('/', function () {
 })->name('homepage');
 
 
-Route::get('/products/{product}', function($id){
-    $products = config('comics.comics');
+Route::get('/products/{comic}', function($id){
+    $comics = config('comics.comics');
 
-    $product = $products[$id];
-    return view('products.show', compact('product'));
-});
+    if($id>=0 && $id < count($comics)){
+        $comic =$comics[$id];
+        return view('products.show', compact('comic'));
+    }else{
+        abort('404');
+    }
+})->name('products.show');
