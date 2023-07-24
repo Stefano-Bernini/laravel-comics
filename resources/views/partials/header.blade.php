@@ -16,7 +16,9 @@
             <div class="row">
                 <div class="col-2 my-4">
                     <div class="img_logo">
-                        <img src="{{ Vite::asset('resources/img/dc-logo.png')}}" alt="">
+                        <a href="{{ url('/')}}">
+                            <img src="{{ Vite::asset('resources/img/dc-logo.png')}}" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="col-10 d-flex align-items-center">
