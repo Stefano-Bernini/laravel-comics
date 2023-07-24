@@ -18,3 +18,11 @@ Route::get('/', function () {
 
     return view('home', compact('comics'));
 })->name('homepage');
+
+
+Route::get('/products/{product}', function($id){
+    $products = config('comics.comics');
+
+    $product = $products[$id];
+    return view('products.show', compact('product'));
+});
