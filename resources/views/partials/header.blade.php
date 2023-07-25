@@ -41,9 +41,5 @@
             </div>
         </div>
     </div>
-    <div class="jumbotron">
-        <div class="current_series">
-            <button class="btn btn-primary py-2 px-4 fw-bold rounded-0 text-uppercase fs-4 ">current series</button>
-        </div>
-    </div>
+    <div class="jumbotron"></div>
 </header>

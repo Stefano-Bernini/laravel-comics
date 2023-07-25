@@ -24,7 +24,7 @@ Route::get('/products/{comic}', function($id){
     $comics = config('comics.comics');
 
     if($id>=0 && $id < count($comics)){
-        $comic =$comics[$id];
+        $comic = $comics[$id];
         return view('products.show', compact('comic'));
     }else{
         abort('404');
